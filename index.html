@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI ช่วยจำการบ้าน</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">🤖 AI ช่วยจำการบ้าน</h1>
+
+        <div class="card p-4 shadow-sm mb-4">
+            <h2 class="card-title text-center mb-3">เพิ่มการบ้านใหม่</h2>
+            <form id="homeworkForm">
+                <div class="mb-3">
+                    <label for="subject" class="form-label">วิชา</label>
+                    <input type="text" class="form-control" id="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="teacher" class="form-label">ชื่อครูผู้สอน</label>
+                    <input type="text" class="form-control" id="teacher">
+                </div>
+                <div class="mb-3">
+                    <label for="task" class="form-label">โจทย์/รายละเอียด</label>
+                    <textarea class="form-control" id="task" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="dueDate" class="form-label">วันกำหนดส่ง</label>
+                    <input type="date" class="form-control" id="dueDate" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dueTime" class="form-label">เวลากำหนดส่ง</label>
+                    <input type="time" class="form-control" id="dueTime" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">บันทึกการบ้าน</button>
+            </form>
+        </div>
+        
+        <div class="card p-4 shadow-sm">
+            <h2 class="card-title text-center mb-3">รายการการบ้าน</h2>
+            <div id="homeworkList">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
